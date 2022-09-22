@@ -1,0 +1,221 @@
+/* global rules */
+* {
+  padding: 0;
+  margin: 0;
+  --webkit--box-sizing: border-box;
+  --moz--box-sizing: border-box;
+  --o--box-sizing: border-box;
+  --ms--box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+input,
+textarea,
+button {
+  border: none;
+  outline: none;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.container {
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width:768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width:992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width:1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.page {
+  display: flex;
+  background-color: #F1F5F9;
+}
+
+.sidebar {
+  width: 250px;
+  min-height: 100vh;
+  background-color: white;
+  box-shadow: 0 0 10px #DDD;
+  padding: 20px;
+  position: relative;
+}
+@media (max-width:767px) {
+  .sidebar {
+    width: 58px;
+    padding: 10px;
+  }
+}
+.sidebar .title {
+  display: flex;
+  justify-content: center;
+  margin: 0px auto 20px auto;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+}
+.sidebar .title::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  bottom: -20px;
+  position: absolute;
+  left: 0;
+}
+.sidebar .title .title-icon {
+  font-size: 24px;
+  color: #726DEE;
+}
+.sidebar .title .title-text {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-left: 5px;
+}
+@media (max-width:767px) {
+  .sidebar .title .title-text {
+    display: none;
+  }
+}
+.sidebar ul {
+  margin-top: 50px;
+}
+.sidebar ul li a {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  transition: background 0.3s;
+  border-radius: 6px;
+  font-size: 14px;
+  color: black;
+  border-radius: 6px;
+  padding: 10px;
+}
+.sidebar ul li a.active, .sidebar ul li a:hover {
+  background-color: #F6F6F6;
+}
+.sidebar ul li a span {
+  font-size: 14px;
+  margin-left: 10px;
+}
+@media (max-width:767px) {
+  .sidebar ul li a span {
+    display: none;
+  }
+}
+@media (max-width:767px) {
+  .sidebar ul li a {
+    justify-content: center;
+  }
+}
+
+.page .content {
+  width: 100%;
+  overflow: hidden;
+}
+.page .content .content-head {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+.page .content .content-head .search {
+  position: relative;
+}
+.page .content .content-head .search::before {
+  font-family: var(--fa-style-family-classic);
+  content: "\f002";
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+  color: #888;
+}
+.page .content .content-head .search input {
+  width: 170px;
+  padding: 10px;
+  padding-left: 35px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: width 0.3s;
+}
+.page .content .content-head .search input::-moz-placeholder {
+  font-size: 14px;
+}
+.page .content .content-head .search input:-ms-input-placeholder {
+  font-size: 14px;
+}
+.page .content .content-head .search input::placeholder {
+  font-size: 14px;
+}
+.page .content .content-head .search input:focus {
+  outline: 1px solid #888;
+  width: 200px;
+}
+.page .content .content-head .search input:focus::-moz-placeholder {
+  opacity: 0;
+}
+.page .content .content-head .search input:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+.page .content .content-head .search input:focus::placeholder {
+  opacity: 0;
+}
+.page .content .content-head .icons {
+  display: flex;
+  align-items: center;
+}
+.page .content .content-head .icons .notification {
+  position: relative;
+  cursor: pointer;
+}
+.page .content .content-head .icons .notification::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #f44336;
+}
+.page .content .content-head .icons img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0px;
+  margin-left: 15px;
+}/*# sourceMappingURL=homepage.css.map */
