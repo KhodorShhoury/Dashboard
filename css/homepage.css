@@ -34,6 +34,41 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #287BFF;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #3d38d3;
+}
+
+.main-heading {
+  position: relative;
+  margin: 20px 20px 40px;
+}
+.main-heading::after, .main-heading::before {
+  content: "";
+  height: 3px;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+.main-heading::before {
+  background-color: white;
+  width: 120px;
+}
+.main-heading::after {
+  background-color: black;
+  width: 40px;
+}
+
 .container {
   margin: auto;
   padding-left: 15px;
@@ -63,7 +98,7 @@ input[type=number] {
 .sidebar {
   width: 250px;
   min-height: 100vh;
-  background-color: white;
+  background-color: #287BFF;
   box-shadow: 0 0 10px #DDD;
   padding: 20px;
   position: relative;
@@ -88,18 +123,19 @@ input[type=number] {
   content: "";
   width: 100%;
   height: 2px;
-  background-color: black;
+  background-color: white;
   bottom: -20px;
   position: absolute;
   left: 0;
 }
 .sidebar .title .title-icon {
   font-size: 24px;
-  color: #726DEE;
+  color: white;
 }
 .sidebar .title .title-text {
   text-transform: uppercase;
   font-size: 20px;
+  color: white;
   margin-left: 5px;
 }
 @media (max-width:767px) {
@@ -110,19 +146,53 @@ input[type=number] {
 .sidebar ul {
   margin-top: 50px;
 }
+@media (max-width:767px) {
+  .sidebar ul {
+    margin-top: 70px;
+  }
+}
 .sidebar ul li a {
+  position: relative;
+  width: calc(100% + 25px);
   display: flex;
   align-items: center;
   margin-bottom: 5px;
-  transition: background 0.3s;
-  border-radius: 6px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
   font-size: 14px;
-  color: black;
-  border-radius: 6px;
+  color: white;
   padding: 10px;
 }
 .sidebar ul li a.active, .sidebar ul li a:hover {
-  background-color: #F6F6F6;
+  background-color: #F1F5F9;
+  color: black;
+}
+.sidebar ul li a.active::before, .sidebar ul li a.active::after, .sidebar ul li a:hover::before, .sidebar ul li a:hover::after {
+  content: "";
+  position: absolute;
+  right: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: transparent;
+  opacity: 1;
+}
+@media (max-width:767px) {
+  .sidebar ul li a.active::before, .sidebar ul li a.active::after, .sidebar ul li a:hover::before, .sidebar ul li a:hover::after {
+    right: 10px;
+  }
+}
+.sidebar ul li a.active::before, .sidebar ul li a:hover::before {
+  top: -50px;
+  -o-box-shadow: 35px 35px 0 10px #F1F5F9;
+  -ms-box-shadow: 35px 35px 0 10px #F1F5F9;
+  box-shadow: 35px 35px 0 10px #F1F5F9;
+}
+.sidebar ul li a.active::after, .sidebar ul li a:hover::after {
+  bottom: -50px;
+  -o-box-shadow: 35px -35px 0 10px #F1F5F9;
+  -ms-box-shadow: 35px -35px 0 10px #F1F5F9;
+  box-shadow: 35px -35px 0 10px #F1F5F9;
 }
 .sidebar ul li a span {
   font-size: 14px;
@@ -133,15 +203,12 @@ input[type=number] {
     display: none;
   }
 }
-@media (max-width:767px) {
-  .sidebar ul li a {
-    justify-content: center;
-  }
-}
 
 .page .content {
   width: 100%;
   overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
 .page .content .content-head {
   background-color: white;
