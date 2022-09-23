@@ -60,4 +60,131 @@
             }
         }
     }
+    .wrapper{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fill,minmax(450px,1fr));
+        margin: {
+            left: 20px;
+            right: 20px
+        };
+        @media($maxMobile){
+                grid-template-columns: minmax(200px,1fr);
+                margin: {
+                    left: 10px;
+                    right: 10px
+                };
+        }
+        .welcome{
+            overflow: hidden;
+            background-color: white;
+            border-radius: 10px;
+            @media($maxMobile){
+                text-align: center;
+                display: block;
+            }
+            .intro{
+                padding: 20px;
+                display: flex;
+                justify-content: space-between;
+                background-color: $main-color;
+                @media($maxMobile){
+                    padding-bottom: 30px;
+                }
+                .intro-text{
+                    h2{
+                        color: white;
+                        font-weight: 700;
+                    }
+                    p{
+                        color: black;
+                        font-weight: 600;
+                        margin-top: 10px;
+                    }
+                }
+                img{
+                    height: 100px;
+                    margin-bottom: -10px;
+                    @media($maxMobile){
+                        display: none;
+                    }
+                }
+            }
+            .avatar{
+                @include circle(64px);
+                margin: {
+                    top: -32px;
+                    left: 20px
+                };
+                padding: 2px;
+                background-color: white;
+                @include prefixer(box-shadow,0 0 5px $light-gray-color,$prefixes);
+                @media($maxMobile){
+                    margin-left: 0;
+                }
+            }
+            .welcome-body{
+                text-align: center;
+                display: flex;
+                padding: 20px;
+                border: {
+                    top: 1px solid $gray-third-color;
+                    bottom: 1px solid $gray-third-color;
+                };
+                margin: {
+                    top: 20px;
+                    bottom: 20px;
+                };
+                @media ($maxMobile) {
+                    display: block;
+                }
+            & > div{
+                flex: 1;
+                    span{
+                        display: block;
+                        color: $gray-color;
+                        font-size: 14px;
+                        margin-top: 10px;
+                        @media($maxMobile){
+                            margin-top: 5px;
+                        }
+                    }
+
+                    @media($maxMobile){
+                        &:not(:last-child){
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .quick-draft{
+            padding: 20px;
+            background-color: white;
+            border-radius: $rad10;
+            h2{
+                margin-bottom: 10px;
+            }
+            p{
+                color: $gray-color;
+                margin-bottom: 20px;
+                font-size: 15px;
+            }
+            form{
+            input[type = 'text'],textarea{
+                    display: block;
+                    width: 100%;
+                    background-color: $gray-third-color;
+                    border-radius: 6px;
+                    padding: 10px;
+                    margin-bottom: 20px;
+                }
+                textarea{
+                    resize: none;
+                    min-height: 180px;
+
+                }
+            }
+        }
+    }
 }

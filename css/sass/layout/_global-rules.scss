@@ -59,3 +59,19 @@ body{
       width: 40px;
     }
   }
+  .main-link{
+    background-color: $main-color;
+    color: white;
+    padding: 4px;
+    border-radius: $rad6;
+    font-weight: 700;
+    font-size: 14px;
+    display: block;
+    width: fit-content;
+    margin: 0 15px 15px auto;
+    transition: $mainTransitionDuration;
+    cursor: pointer;
+    &:hover{
+      background-color: $alt-color;
+    }
+  }
