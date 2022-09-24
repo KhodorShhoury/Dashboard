@@ -450,7 +450,7 @@ input[type=number] {
   font-size: 15px;
 }
 .page .content .wrapper .yearly-target .target-row {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   display: flex;
   align-items: center;
 }
@@ -460,27 +460,51 @@ input[type=number] {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: red;
+  margin-right: 15px;
 }
 .page .content .wrapper .yearly-target .target-row .details {
-  margin-left: 15px;
+  flex: 1;
 }
 .page .content .wrapper .yearly-target .target-row .details .title {
   color: #A89CA0;
-  font-size: 14px;
+  font-size: 15px;
 }
 .page .content .wrapper .yearly-target .target-row .details .number {
   display: block;
-  margin-top: 5px;
-  margin-right: 0;
-  margin-bottom: 10px;
-  margin-left: 0;
+  margin: 10px 0px 10px;
   font-weight: 700;
 }
 .page .content .wrapper .yearly-target .target-row .details .progress {
   position: relative;
+  background-color: rgba(34, 197, 94, 0.2);
+}
+.page .content .wrapper .yearly-target .target-row .details .progress > span {
+  background-color: red;
+  display: block;
+  position: relative;
+  height: 4px;
+}
+.page .content .wrapper .yearly-target .target-row .details .progress > span span {
+  position: absolute;
+  right: -16px;
+  bottom: 16px;
+  background-color: red;
+  padding: 2px 5px;
+  border-radius: 6px;
+  color: white;
+  font-weight: 700;
+  font-size: 13px;
 }
 .page .content .wrapper .yearly-target .target-row .details .progress > span span::after {
   content: "";
+  border-color: transparent;
+  border-width: 5px;
+  border-style: solid;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
 }
 .page .content .wrapper .yearly-target .target-row.money .icon {
   background-color: rgba(0, 117, 255, 0.2);
@@ -489,7 +513,16 @@ input[type=number] {
   color: #0075ff;
 }
 .page .content .wrapper .yearly-target .target-row.money .progress {
+  background-color: rgba(0, 117, 255, 0.2);
+}
+.page .content .wrapper .yearly-target .target-row.money .progress > span {
   background-color: #0075ff;
+}
+.page .content .wrapper .yearly-target .target-row.money .progress > span span {
+  background-color: #0075ff;
+}
+.page .content .wrapper .yearly-target .target-row.money .progress > span span::after {
+  border-top-color: #0075ff;
 }
 .page .content .wrapper .yearly-target .target-row.projects .icon {
   background-color: rgba(245, 158, 11, 0.2);
@@ -498,7 +531,16 @@ input[type=number] {
   color: #f59e0b;
 }
 .page .content .wrapper .yearly-target .target-row.projects .progress {
+  background-color: rgba(245, 158, 11, 0.2);
+}
+.page .content .wrapper .yearly-target .target-row.projects .progress > span {
   background-color: #f59e0b;
+}
+.page .content .wrapper .yearly-target .target-row.projects .progress > span span {
+  background-color: #f59e0b;
+}
+.page .content .wrapper .yearly-target .target-row.projects .progress > span span::after {
+  border-top-color: #f59e0b;
 }
 .page .content .wrapper .yearly-target .target-row.team .icon {
   background-color: rgba(34, 197, 94, 0.2);
@@ -507,5 +549,14 @@ input[type=number] {
   color: #22c55e;
 }
 .page .content .wrapper .yearly-target .target-row.team .progress {
+  background-color: rgba(34, 197, 94, 0.2);
+}
+.page .content .wrapper .yearly-target .target-row.team .progress > span {
   background-color: #22c55e;
+}
+.page .content .wrapper .yearly-target .target-row.team .progress > span span {
+  background-color: #22c55e;
+}
+.page .content .wrapper .yearly-target .target-row.team .progress > span span::after {
+  border-top-color: #22c55e;
 }/*# sourceMappingURL=homepage.css.map */
