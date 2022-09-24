@@ -435,4 +435,77 @@ input[type=number] {
 .page .content .wrapper .quick-draft form textarea {
   resize: none;
   min-height: 180px;
+}
+.page .content .wrapper .yearly-target {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+.page .content .wrapper .yearly-target h2 {
+  margin-bottom: 10px;
+}
+.page .content .wrapper .yearly-target p {
+  color: #A89CA0;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+.page .content .wrapper .yearly-target .target-row {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.page .content .wrapper .yearly-target .target-row .icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page .content .wrapper .yearly-target .target-row .details {
+  margin-left: 15px;
+}
+.page .content .wrapper .yearly-target .target-row .details .title {
+  color: #A89CA0;
+  font-size: 14px;
+}
+.page .content .wrapper .yearly-target .target-row .details .number {
+  display: block;
+  margin-top: 5px;
+  margin-right: 0;
+  margin-bottom: 10px;
+  margin-left: 0;
+  font-weight: 700;
+}
+.page .content .wrapper .yearly-target .target-row .details .progress {
+  position: relative;
+}
+.page .content .wrapper .yearly-target .target-row .details .progress > span span::after {
+  content: "";
+}
+.page .content .wrapper .yearly-target .target-row.money .icon {
+  background-color: rgba(0, 117, 255, 0.2);
+}
+.page .content .wrapper .yearly-target .target-row.money .icon i {
+  color: #0075ff;
+}
+.page .content .wrapper .yearly-target .target-row.money .progress {
+  background-color: #0075ff;
+}
+.page .content .wrapper .yearly-target .target-row.projects .icon {
+  background-color: rgba(245, 158, 11, 0.2);
+}
+.page .content .wrapper .yearly-target .target-row.projects .icon i {
+  color: #f59e0b;
+}
+.page .content .wrapper .yearly-target .target-row.projects .progress {
+  background-color: #f59e0b;
+}
+.page .content .wrapper .yearly-target .target-row.team .icon {
+  background-color: rgba(34, 197, 94, 0.2);
+}
+.page .content .wrapper .yearly-target .target-row.team .icon i {
+  color: #22c55e;
+}
+.page .content .wrapper .yearly-target .target-row.team .progress {
+  background-color: #22c55e;
 }/*# sourceMappingURL=homepage.css.map */
