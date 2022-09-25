@@ -75,3 +75,21 @@ body{
       background-color: $alt-color;
     }
   }
+  .main-link.borderd{
+    background-color: white;
+    border: 1px solid $main-color;
+    color: $main-color;
+    padding: 4px;
+    border-radius: $rad6;
+    font-weight: 700;
+    font-size: 14px;
+    display: block;
+    width: fit-content;
+    margin: 0 15px 15px auto;
+    transition: $mainTransitionDuration;
+    cursor: pointer;
+    &:hover{
+      background-color: $alt-color;
+      color: white;
+    }
+  }

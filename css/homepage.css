@@ -88,6 +88,27 @@ input[type=number] {
   background-color: #3d38d3;
 }
 
+.main-link.borderd {
+  background-color: white;
+  border: 1px solid #287BFF;
+  color: #287BFF;
+  padding: 4px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 14px;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 15px 15px auto;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.main-link.borderd:hover {
+  background-color: #3d38d3;
+  color: white;
+}
+
 .container {
   margin: auto;
   padding-left: 15px;
@@ -328,6 +349,7 @@ input[type=number] {
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .page .content .wrapper .news .massage h3 {
   color: rgba(40, 123, 255, 0.7);
@@ -375,12 +397,16 @@ input[type=number] {
     display: none;
   }
 }
-.page .content .wrapper .news img {
-  width: 200px;
-  display: block;
+.page .content .wrapper .news .image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.page .content .wrapper .news .image img {
+  width: 150px;
 }
 @media (max-width:767px) {
-  .page .content .wrapper .news img {
+  .page .content .wrapper .news .image img {
     display: none;
   }
 }
@@ -624,4 +650,94 @@ input[type=number] {
 }
 .page .content .wrapper .yearly-target .target-row.team .progress > span span::after {
   border-top-color: #22c55e;
+}
+.page .content .wrapper .statistics {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: space-between;
+}
+.page .content .wrapper .statistics .box {
+  padding: 30px 10px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page .content .wrapper .statistics .box .icon {
+  margin-right: 10px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+.page .content .wrapper .statistics .box .icon i {
+  font-size: 30px;
+}
+.page .content .wrapper .statistics .box .text span {
+  display: block;
+}
+.page .content .wrapper .statistics .box .text .title {
+  font-weight: 700;
+  color: #333333;
+}
+.page .content .wrapper .statistics .box .text .number {
+  font-weight: 500;
+  margin: 5px 0px;
+  font-weight: 700;
+  color: #333333;
+}
+.page .content .wrapper .statistics .box .text .date {
+  color: #A89CA0;
+  font-size: 13px;
+}
+.page .content .wrapper .statistics .box .text .result {
+  margin: 5px 0px 0px;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #A89CA0;
+}
+.page .content .wrapper .statistics .box .text .result span {
+  font-size: 12px;
+  margin-right: 5px;
+  color: #22c55e;
+}
+.page .content .wrapper .statistics .box .text .result span::before {
+  font-family: var(--fa-style-family-classic);
+  content: "\f102";
+  font-weight: 700;
+}
+.page .content .wrapper .statistics .box.Earnings .text .number {
+  color: #f44336;
+}
+.page .content .wrapper .students .icon {
+  background-color: rgba(0, 117, 255, 0.2);
+}
+.page .content .wrapper .students .icon i {
+  color: #0075ff;
+}
+.page .content .wrapper .courses .icon {
+  background-color: rgba(245, 158, 11, 0.2);
+}
+.page .content .wrapper .courses .icon i {
+  color: #f59e0b;
+}
+.page .content .wrapper .revenue .icon {
+  background-color: rgba(34, 197, 94, 0.2);
+}
+.page .content .wrapper .revenue .icon i {
+  color: #22c55e;
+}
+.page .content .wrapper .Earnings .icon {
+  background-color: rgba(244, 67, 54, 0.2);
+}
+.page .content .wrapper .Earnings .icon i {
+  color: #f44336;
 }/*# sourceMappingURL=homepage.css.map */
