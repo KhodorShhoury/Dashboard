@@ -59,6 +59,14 @@ body{
       width: 40px;
     }
   }
+  .main-box-heading{
+    margin-bottom: 10px;
+}
+.main-box-paragraph{
+    color: $gray-color;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
   .main-link{
     background-color: $main-color;
     color: white;
@@ -92,4 +100,16 @@ body{
       background-color: $alt-color;
       color: white;
     }
+  }
+  .success{
+    color: $blue-color;
+  }
+  .warning{
+    color: $orange-color;
+  }
+  .danger{
+    color: $red-color;
+  }
+  .info{
+    color: purple;
   }

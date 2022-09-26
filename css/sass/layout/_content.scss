@@ -75,7 +75,7 @@
                     right: 10px
                 };
         }
-        .news{
+        .notification{
             grid-column-start: 1;
             grid-column-end: -1;
             background-color: white;
@@ -137,6 +137,104 @@
                     }
                 }
             }
+        }
+        .statistics{
+            grid-column-start: 1;
+            grid-column-end: -1;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+            gap: 20px;
+            .box{
+                padding: 30px 10px;
+                background-color: white;
+                border-radius: $rad10;
+                @include flexCenterer();
+                .icon{
+                    margin-right: 10px;
+                    width: 70px;
+                    height: 70px;
+                    @include flexCenterer();
+                    border-radius: $rad6;
+                    i{
+                        font-size: 30px;
+                    }
+                }
+                .text{
+                    span{
+                        display: block;
+                    }
+                    .title{
+                        font-weight: 700;
+                        color: $black-color;
+                    }
+                    .number{
+                        font-weight: 500;
+                        margin: 5px 0px; 
+                        font-weight: 700;
+                        color: $black-color;
+                    }
+                    .date{
+                        color: $gray-color;
+                        font-size: 13px;
+                    }
+                    .result{
+                        margin: 5px 0px 0px;
+                        @include contentVericalCenterer();
+                        font-size: 13px;
+                        color: $gray-color;
+                        span{
+                            font-size: 12px;
+                            margin-right: 5px;
+                            color: $green-color;
+                            &::before{
+                                font-family: var(--fa-style-family-classic);
+                                content: "\f102";
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+                &.Earnings{
+                    .text{
+                        .number{
+                            color: $red-color;
+                        }
+                    }
+                }
+            }
+            .students{
+            .icon{
+                background-color: rgba($color: $blue-color, $alpha: 0.2);
+                i{
+                    color: $blue-color;
+                }
+            }
+        }
+        .courses{
+            .icon{
+                background-color: rgba($color: $orange-color, $alpha: 0.2);
+                i{
+                    color: $orange-color;
+                }
+            }
+        }
+        .revenue{
+            .icon{
+                background-color: rgba($color: $green-color, $alpha: 0.2);
+                i{
+                    color: $green-color;
+                }
+            }
+        }
+        .Earnings{
+            .icon{
+                background-color: rgba($color: $red-color, $alpha: 0.2);
+                i{
+                    color: $red-color;
+                }
+            }
+        }
         }
         .welcome{
             overflow: hidden;
@@ -225,14 +323,6 @@
             padding: 20px;
             background-color: white;
             border-radius: $rad10;
-            h2{
-                margin-bottom: 10px;
-            }
-            p{
-                color: $gray-color;
-                margin-bottom: 20px;
-                font-size: 15px;
-            }
             form{
             input[type = 'text'],textarea{
                     display: block;
@@ -253,14 +343,6 @@
             padding: 20px;
             background-color: white;
             border-radius: $rad10;
-            h2{
-                margin-bottom: 10px;
-            }
-            p{
-                color: $gray-color;
-                margin-bottom: 20px;
-                font-size: 15px;
-            }
             .target-row{
                 margin-bottom: 15px;
                 display: flex;
@@ -377,103 +459,93 @@
             }
             
         }
-        .statistics{
-            grid-column-start: 1;
-            grid-column-end: -1;
-            padding: 10px;
-            display: grid;
-            grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
-            gap: 20px;
-            justify-content: space-between;
-            .box{
-                padding: 30px 10px;
-                background-color: white;
-                border-radius: $rad10;
-                @include flexCenterer();
-                .icon{
-                    margin-right: 10px;
-                    width: 70px;
-                    height: 70px;
-                    @include flexCenterer();
+        .tickets-stats{
+            padding: 20px;
+            background-color: white;
+            border-radius: $rad10;
+            .stats{
+                .box{
+                    @include contentVericalCenterer();
+                    border: 2px solid $gray-third-color;
                     border-radius: $rad6;
+                    padding: 20px;
+                    margin: 20px 0px;
                     i{
-                        font-size: 30px;
+                        color: $blue-color;
+                        font-size: 35px;
+                        margin-right: 10px;
                     }
-                }
-                .text{
+                    h4{
+                        color: $gray-color;
+                    }
                     span{
-                        display: block;
-                    }
-                    .title{
                         font-weight: 700;
-                        color: $black-color;
+                        font-size: 18px;
+                        margin-left: 10px;
                     }
-                    .number{
-                        font-weight: 500;
-                        margin: 5px 0px; 
+                }
+                .total{
+                    i{
+                        color: $orange-color;
+                    }
+                }
+                .pending{
+                    i{
+                        color: $blue-color;
+                    }
+                }
+                .closed{
+                    i{
+                        color: $green-color;
+                    }
+                }
+                .deleted{
+                    i{
+                        color: $red-color;
+                    }
+                }
+            }
+        }
+        .my-activity{
+            padding: 20px;
+            background-color: white;
+            border-radius: $rad10;
+            .timelines{
+                position: relative;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    width: 2px;
+                    background-color: $gray-color;
+                    height: 100%;
+                    left: 54px;
+                    bottom: 0;
+                }
+            }
+            .timeline{
+                @include contentVericalCenterer();
+                margin-bottom: 15px;
+                .timeline-label{
+                    font-weight: 700;
+                    color: #3F4254;
+                    font-size: 14px;
+                }
+                .timeline-badge{
+                    margin: 1px 10px 0px;
+                    z-index: 1;
+                    @include circle(13px);
+                    border: 6px solid white;
+                    @include flexCenterer();
+                    background-color: white;
+                    padding: 3px;
+                    i{
                         font-weight: 700;
-                        color: $black-color;
-                    }
-                    .date{
-                        color: $gray-color;
-                        font-size: 13px;
-                    }
-                    .result{
-                        margin: 5px 0px 0px;
-                        @include contentVericalCenterer();
-                        font-size: 13px;
-                        color: $gray-color;
-                        span{
-                            font-size: 12px;
-                            margin-right: 5px;
-                            color: $green-color;
-                            &::before{
-                                font-family: var(--fa-style-family-classic);
-                                content: "\f102";
-                                font-weight: 700;
-                            }
-                        }
                     }
                 }
-                &.Earnings{
-                    .text{
-                        
-                        .number{
-                            color: $red-color;
-                        }
-                    }
-                }
-            }
-        }
-        .students{
-            .icon{
-                background-color: rgba($color: $blue-color, $alpha: 0.2);
-                i{
-                    color: $blue-color;
-                }
-            }
-        }
-        .courses{
-            .icon{
-                background-color: rgba($color: $orange-color, $alpha: 0.2);
-                i{
-                    color: $orange-color;
-                }
-            }
-        }
-        .revenue{
-            .icon{
-                background-color: rgba($color: $green-color, $alpha: 0.2);
-                i{
-                    color: $green-color;
-                }
-            }
-        }
-        .Earnings{
-            .icon{
-                background-color: rgba($color: $red-color, $alpha: 0.2);
-                i{
-                    color: $red-color;
+                .timeline-content{
+                    font-weight: 700;
+                    color: #3F4254;
+                    font-size: 14px;
                 }
             }
         }
