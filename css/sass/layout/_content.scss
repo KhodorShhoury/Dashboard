@@ -64,6 +64,7 @@
         display: grid;
         gap: 20px;
         grid-template-columns: repeat(auto-fill,minmax(450px,1fr));
+        padding-bottom: 20px;
         margin: {
             left: 20px;
             right: 20px
@@ -597,6 +598,27 @@
                         flex: 1;
                         text-align: end;
                     }
+                }
+            }
+        }
+        .top-search{
+            padding: 20px;
+            background-color: white;
+            border-radius: $rad6;
+            .items-head{
+                @include flexBetween();
+                margin-bottom: 10px;
+                color: $gray-color;
+            }
+            .items{
+                @include flexBetween();
+                padding: 15px 0px;
+                .count{
+                    background-color: $gray-third-color;
+                    font-size: 14px;
+                    padding: 5px;
+                    border-radius: $rad6;
+                    font-weight: 500;
                 }
             }
         }
