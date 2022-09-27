@@ -919,4 +919,43 @@ input[type=number] {
   padding: 5px;
   border-radius: 6px;
   font-weight: 500;
+}
+.page .content .wrapper .latest-uploads {
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+}
+.page .content .wrapper .latest-uploads h2 {
+  margin-bottom: 20px;
+}
+.page .content .wrapper .latest-uploads ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.page .content .wrapper .latest-uploads ul li:not(:last-of-type) {
+  border-bottom: 1px solid #EEEEEE;
+}
+.page .content .wrapper .latest-uploads ul li .content {
+  display: flex;
+  align-items: center;
+}
+.page .content .wrapper .latest-uploads ul li .content img {
+  width: 40px;
+  margin-right: 10px;
+}
+.page .content .wrapper .latest-uploads ul li .content div .file-name {
+  display: block;
+}
+.page .content .wrapper .latest-uploads ul li .content div .person-name {
+  color: #A89CA0;
+  font-size: 15px;
+}
+.page .content .wrapper .latest-uploads ul li .file-space {
+  background-color: #EEEEEE;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 6px;
+  font-weight: 500;
 }/*# sourceMappingURL=homepage.css.map */

@@ -622,5 +622,46 @@
                 }
             }
         }
+        .latest-uploads{
+            padding: 20px;
+            background-color: white;
+            border-radius: $rad20;
+            h2{
+                margin-bottom: 20px;
+            }
+            ul{
+                li{
+                    @include contentVericalCenterer();
+                    justify-content: space-between;
+                    padding: 10px;
+                    &:not(:last-of-type){
+                        border-bottom: 1px solid $gray-third-color;
+                    }
+                    .content{
+                        @include contentVericalCenterer();
+                        img{
+                            width: 40px;
+                            margin-right: 10px;
+                        }
+                        div{
+                            .file-name{
+                                display: block;
+                            }
+                            .person-name{
+                                color: $gray-color;
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                    .file-space{
+                        background-color: $gray-third-color;
+                        font-size: 14px;
+                        padding: 5px;
+                        border-radius: $rad6;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
     }
 }
