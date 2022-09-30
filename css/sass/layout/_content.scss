@@ -663,5 +663,73 @@
                 }
             }
         }
+        .reminders{
+            background-color: white;
+            padding: 20px;
+            border-radius: $rad10;
+            ul{
+                li{
+                    @include contentVericalCenterer();
+                    &:not(:last-of-type){
+                        margin-bottom: 20px;
+                }
+                    .icon{
+                        margin-right: 15px;
+                        @include circle(50px);
+                        @include contentCenterer();
+                        i{
+                            color: white;
+                            font-size: 18px;
+                        }
+                    }
+                    .content{
+                        border-left: 1px solid;
+                        padding: 0px 10px;
+                        p{
+                            font: {
+                                size: 16px;
+                                weight : 700;
+                            }
+                            margin-bottom: 5px;
+                        }
+                        span{
+                            color: $gray-color;
+                        }
+                    }
+                }
+                li:nth-child(1){
+                    .icon{
+                        background-color: $blue-color;
+                    }
+                    .content{
+                        border-left-color: $blue-color;
+                    }
+                }
+                li:nth-child(2){
+                    .icon{
+                        background-color: $red-color;
+                    }
+                    .content{
+                        border-left-color: $red-color;
+                    }
+                }
+                li:nth-child(3){
+                    .icon{
+                        background-color: $orange-color;
+                    }
+                    .content{
+                        border-left-color: $orange-color;
+                    }
+                }
+                li:nth-child(4){
+                    .icon{
+                        background-color: $green-color;
+                    }
+                    .content{
+                        border-left-color: $green-color;
+                    }
+                }
+            }
+        }
     }
 }

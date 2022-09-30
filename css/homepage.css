@@ -135,6 +135,22 @@ input[type=number] {
   color: purple;
 }
 
+.bg-blue {
+  background-color: #0075ff;
+}
+
+.bg-green {
+  background-color: #22c55e;
+}
+
+.bg-red {
+  background-color: #f44336;
+}
+
+.bg-orange {
+  background-color: #f59e0b;
+}
+
 .container {
   margin: auto;
   padding-left: 15px;
@@ -958,4 +974,65 @@ input[type=number] {
   padding: 5px;
   border-radius: 6px;
   font-weight: 500;
+}
+.page .content .wrapper .reminders {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+.page .content .wrapper .reminders ul li {
+  display: flex;
+  align-items: center;
+}
+.page .content .wrapper .reminders ul li:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+.page .content .wrapper .reminders ul li .icon {
+  margin-right: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page .content .wrapper .reminders ul li .icon i {
+  color: white;
+  font-size: 18px;
+}
+.page .content .wrapper .reminders ul li .content {
+  border-left: 1px solid;
+  padding: 0px 10px;
+}
+.page .content .wrapper .reminders ul li .content p {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.page .content .wrapper .reminders ul li .content span {
+  color: #A89CA0;
+}
+.page .content .wrapper .reminders ul li:nth-child(1) .icon {
+  background-color: #0075ff;
+}
+.page .content .wrapper .reminders ul li:nth-child(1) .content {
+  border-left-color: #0075ff;
+}
+.page .content .wrapper .reminders ul li:nth-child(2) .icon {
+  background-color: #f44336;
+}
+.page .content .wrapper .reminders ul li:nth-child(2) .content {
+  border-left-color: #f44336;
+}
+.page .content .wrapper .reminders ul li:nth-child(3) .icon {
+  background-color: #f59e0b;
+}
+.page .content .wrapper .reminders ul li:nth-child(3) .content {
+  border-left-color: #f59e0b;
+}
+.page .content .wrapper .reminders ul li:nth-child(4) .icon {
+  background-color: #22c55e;
+}
+.page .content .wrapper .reminders ul li:nth-child(4) .content {
+  border-left-color: #22c55e;
 }/*# sourceMappingURL=homepage.css.map */
