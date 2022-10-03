@@ -1213,6 +1213,9 @@ input[type=number] {
 .page .content .wrapper .projects .responsive-table table tbody tr td:last-child {
   border-right: 1px solid #EEEEEE;
 }
+.page .content .wrapper .projects .responsive-table table tbody tr td i {
+  margin-left: 3px;
+}
 .page .content .wrapper .projects .responsive-table table tbody tr td img {
   width: 32px;
   height: 32px;

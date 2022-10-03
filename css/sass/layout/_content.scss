@@ -887,7 +887,9 @@
                                 font-size: 13px;
                                 &:last-child{
                                     border-right: 1px solid $gray-third-color;
-
+                                }
+                                i{
+                                    margin-left: 3px;
                                 }
                                 img{
                                     @include circle(32px);
