@@ -135,6 +135,22 @@ input[type=number] {
   color: purple;
 }
 
+.blue {
+  color: #0075ff;
+}
+
+.green {
+  color: #22c55e;
+}
+
+.red {
+  color: #f44336;
+}
+
+.orange {
+  color: #f59e0b;
+}
+
 .bg-blue {
   background-color: #0075ff;
 }
@@ -939,7 +955,7 @@ input[type=number] {
 .page .content .wrapper .latest-uploads {
   padding: 20px;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 .page .content .wrapper .latest-uploads h2 {
   margin-bottom: 20px;
@@ -1035,4 +1051,175 @@ input[type=number] {
 }
 .page .content .wrapper .reminders ul li:nth-child(4) .content {
   border-left-color: #22c55e;
+}
+.page .content .wrapper .latest-post {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+.page .content .wrapper .latest-post .post .post-header {
+  padding: 10px 0px 20px;
+  border-bottom: 1px solid #EEEEEE;
+  display: flex;
+  align-items: center;
+}
+.page .content .wrapper .latest-post .post .post-header .picture {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.page .content .wrapper .latest-post .post .post-header .profile .name {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.page .content .wrapper .latest-post .post .post-header .profile .time {
+  font-size: 13px;
+  color: #A89CA0;
+  font-weight: 600;
+}
+.page .content .wrapper .latest-post .post .content {
+  padding: 20px 0px;
+  border-bottom: 1px solid #EEEEEE;
+}
+.page .content .wrapper .latest-post .post .statistic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+.page .content .wrapper .latest-post .post .statistic .likes i, .page .content .wrapper .latest-post .post .statistic .likes span, .page .content .wrapper .latest-post .post .statistic .comments i, .page .content .wrapper .latest-post .post .statistic .comments span {
+  color: #A89CA0;
+}
+.page .content .wrapper .media-stats {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+.page .content .wrapper .media-stats .socials {
+  display: flex;
+  flex-direction: column;
+}
+.page .content .wrapper .media-stats .socials .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page .content .wrapper .media-stats .socials .box:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+.page .content .wrapper .media-stats .socials .box .icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page .content .wrapper .media-stats .socials .box .icon i {
+  color: white;
+}
+.page .content .wrapper .media-stats .socials .box .followers-count {
+  flex: 1;
+  padding-left: 15px;
+  font-weight: 600;
+}
+.page .content .wrapper .media-stats .socials .box a {
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  margin-right: 10px;
+}
+.page .content .wrapper .media-stats .socials .box.twitter {
+  background-color: rgba(29, 161, 242, 0.1);
+}
+.page .content .wrapper .media-stats .socials .box.twitter .icon {
+  background-color: #1DA1F2;
+}
+.page .content .wrapper .media-stats .socials .box.twitter .followers-count {
+  color: #1DA1F2;
+}
+.page .content .wrapper .media-stats .socials .box.twitter a {
+  background-color: #1DA1F2;
+}
+.page .content .wrapper .media-stats .socials .box.facebook {
+  background-color: rgba(24, 119, 242, 0.1);
+}
+.page .content .wrapper .media-stats .socials .box.facebook .icon {
+  background-color: #1877F2;
+}
+.page .content .wrapper .media-stats .socials .box.facebook .followers-count {
+  color: #1877F2;
+}
+.page .content .wrapper .media-stats .socials .box.facebook a {
+  background-color: #1877F2;
+}
+.page .content .wrapper .media-stats .socials .box.youtube {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+.page .content .wrapper .media-stats .socials .box.youtube .icon {
+  background-color: #FF0000;
+}
+.page .content .wrapper .media-stats .socials .box.youtube .followers-count {
+  color: #FF0000;
+}
+.page .content .wrapper .media-stats .socials .box.youtube a {
+  background-color: #FF0000;
+}
+.page .content .wrapper .media-stats .socials .box.linkedIn {
+  background-color: rgba(0, 119, 181, 0.1);
+}
+.page .content .wrapper .media-stats .socials .box.linkedIn .icon {
+  background-color: #0077B5;
+}
+.page .content .wrapper .media-stats .socials .box.linkedIn .followers-count {
+  color: #0077B5;
+}
+.page .content .wrapper .media-stats .socials .box.linkedIn a {
+  background-color: #0077B5;
+}
+.page .content .wrapper .projects {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+.page .content .wrapper .projects .responsive-table {
+  overflow-x: auto;
+}
+.page .content .wrapper .projects .responsive-table table {
+  font-size: 15px;
+  min-width: 1000px;
+  border-spacing: 0;
+}
+.page .content .wrapper .projects .responsive-table table td {
+  padding: 15px;
+}
+.page .content .wrapper .projects .responsive-table table thead td {
+  background-color: #ccc;
+  font-weight: bold;
+}
+.page .content .wrapper .projects .responsive-table table tbody tr:hover {
+  background-color: #faf7f7;
+}
+.page .content .wrapper .projects .responsive-table table tbody tr td {
+  border-bottom: 1px solid #EEEEEE;
+  border-left: 1px solid #EEEEEE;
+  font-weight: 600;
+  font-size: 13px;
+}
+.page .content .wrapper .projects .responsive-table table tbody tr td:last-child {
+  border-right: 1px solid #EEEEEE;
+}
+.page .content .wrapper .projects .responsive-table table tbody tr td img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  padding: 2px;
+  background-color: white;
+}
+.page .content .wrapper .projects .responsive-table table tbody tr td img:not(:first-child) {
+  margin-left: -20px;
 }/*# sourceMappingURL=homepage.css.map */

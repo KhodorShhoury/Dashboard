@@ -76,6 +76,10 @@ align-items: center;
     justify-content: center;
     align-items: center;
 }
+@mixin columnFlex(){
+    display: flex;
+    flex-direction: column;
+}
   //circle shape
 @mixin circle($dimension) {
     width: $dimension;
