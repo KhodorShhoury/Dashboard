@@ -1,0 +1,31 @@
+.toggle-checkbox{
+    @include prefixer(appearance,none,$prefixes);
+    &:checked + .toggle-switch{
+        background-color: $main-color;
+    }
+    &:checked + .toggle-switch::before{
+        left: 50px;
+        color: $main-color;
+        content: "\f00c";
+    }
+}
+.toggle-switch{
+    background-color: #ccc;
+    width: 78px;
+    height: 32px;
+    border-radius: 16px;
+    position: relative;
+    cursor: pointer;
+    &::before{
+    font-family: var(--fa-style-family-classic);        ;
+    content: "\58";
+    font-weight: 900;
+    @include circle(24px);
+    background-color: white;
+    @include verticalCenterer();
+    left: 4px;
+    @include contentCenterer();
+    color: #aaa;
+    transition: $mainTransitionDuration;
+    }
+}

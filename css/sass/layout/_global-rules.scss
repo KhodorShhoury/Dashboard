@@ -137,3 +137,7 @@ body{
   .bg-orange{
     background-color: $orange-color;
   }
+  .page{
+    display: flex;
+    background-color: $bg-color;
+}

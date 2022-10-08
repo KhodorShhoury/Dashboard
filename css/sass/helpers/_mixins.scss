@@ -71,14 +71,13 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 }
-@mixin flexCenterer(){
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 @mixin columnFlex(){
     display: flex;
     flex-direction: column;
+}
+@include flexAlignCenter(){
+    display: flex;
+    align-items: center;
 }
   //circle shape
 @mixin circle($dimension) {

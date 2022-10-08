@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <!-- normalize file  -->
+    <link rel="stylesheet" href="css/normalize.css">
+     <!-- include fontawesome -->
+     <link rel="stylesheet" href="css/all.min.css" class="css">
+     <!-- css file -->
+     <link rel="stylesheet" href="css/settings.css">
+     <!-- google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page">
+        <aside class="sidebar">
+            <div class="title">
+                <i class="fa-solid fa-gauge title-icon"></i>
+                <h3 class="title-text">Dashboard</h3>
+            </div>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span>dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="active" href="settings.html">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html">
+                        <i class="fa-solid fa-user"></i>
+                        <span>profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="projects.html">
+                        <i class="fa-solid fa-diagram-project"></i>
+                        <span>projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="courses.html">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span>courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="friends.html">
+                        <i class="fa-solid fa-user-friends"></i>
+                        <span>friends</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="files.html">
+                        <i class="fa-solid fa-file"></i>
+                        <span>Files</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard.html">
+                        <i class="fa-solid fa-credit-card"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <div class="content">
+            <!-- start head -->
+            <div class="content-head">
+                <div class="search">
+                    <input type="search" placeholder="Type A Keyword">
+                </div>
+                <div class="icons">
+                    <span class="notification">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                    </span>
+                    <img src="imgs/avatar.jpg" alt="avatar">
+                </div>
+            </div>
+            <!-- end head -->
+            <h1 class="main-heading">Settings</h1>
+            <div class="wrapper">
+                <div class="site-control">
+                    <h2 class="main-box-heading">Site Control</h2>
+                    <p class="main-box-paragraph">Control The Website If There A Maintenance</p>
+                    <div>
+                        <div>
+                            <span>Website Control</span>
+                            <p>Open/Close The Website And Type The Reason</p>
+                        </div>
+                        <div>
+                            <label>
+                                <input class="toggle-checkbox" type="checkbox">
+                                <div class="toggle-switch"></div>
+                            </label>
+                        </div>
+                    </div>
+                    <textarea placeholder="Close Message Content"></textarea>
+                </div>
+                <div class="general-info">
+                    <h2 class="main-box-heading">General Info</h2>
+                    <p class="main-box-paragraph">General Information About Your Account</p>
+                    <div class="inputs">
+                        <label for="first">First Name</label>
+                        <input type="text" placeholder="First Name" id="first">
+                        <label for="last">Last Name</label>
+                        <input type="text" placeholder="Last Name" id="last">
+                    </div>
+                    <div class="email">
+                        <label for="email">Email</label>
+                        <input type="text" placeholder="user@gmail.com" id="email">
+                        <a href="#">Change</a>
+                    </div>
+                </div>
+                <div class="security-info">
+                    <h2 class="main-box-heading">Security Info</h2>
+                    <p class="main-box-paragraph">Security Information About Your Account</p>
+                    <div class="sec-box">
+                        <div>
+                            <span>Password</span>
+                            <p>Last Change On 25/10/2021</p>
+                        </div>
+                        <a href="#" class="button">Change</a>
+                    </div>
+                    <div class="sec-box">
+                        <div>
+                            <span>Two Factor Authentication</span>
+                            <p>Enable/Disable The Feature</p>
+                        </div>
+                        <label>
+                            <input class="toggle-checkbox" type="checkbox">
+                            <div class="toggle-switch"></div>
+                        </label>
+                    </div>
+                    <div class="sec-box">
+                        <div>
+                            <span>Logged In Devices</span>
+                            <p>Check The Logged In Devices List</p>
+                        </div>
+                        <a href="#" class="button">Devices</a>
+                    </div>
+                </div>
+                <div class="Social-info">
+                    <h2 class="main-box-heading">Social Info</h2>
+                    <p class="main-box-paragraph">Social Media Information</p>
+                    <div class="social-box">
+                        <i class="fa-brands fa-twitter fa-lg"></i>
+                        <input type="text" placeholder="Twitter Username">
+                    </div>
+                    <div class="social-box">
+                        <i class="fa-brands fa-twitter fa-lg"></i>
+                        <input type="text" placeholder="Twitter Username">
+                    </div>
+                    <div class="social-box">
+                        <i class="fa-brands fa-twitter fa-lg"></i>
+                        <input type="text" placeholder="Twitter Username">
+                    </div>
+                    <div class="social-box">
+                        <i class="fa-brands fa-twitter fa-lg"></i>
+                        <input type="text" placeholder="Twitter Username">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
