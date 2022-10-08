@@ -75,7 +75,7 @@ align-items: center;
     display: flex;
     flex-direction: column;
 }
-@include flexAlignCenter(){
+@mixin flexAlignCenter(){
     display: flex;
     align-items: center;
 }
