@@ -131,4 +131,64 @@
             }
         }
     }
+    .widgets-control{
+        padding: 20px;
+        background-color: white;
+        border-radius: $rad6;
+        .control{
+            display: flex;
+            margin-bottom: 15px;
+            input{
+                margin-right: 10px;
+            }
+        }
+    }
+    .backup-manager{
+        padding: 20px;
+        background-color: white;
+        border-radius: $rad6;
+        .manage{
+            @include flexAlignCenter();
+            margin-bottom: 10px;
+            input{
+                margin-right: 10px;
+            }
+        }
+        .servers{
+            @include flexAlignCenter();
+            @media($maxMobile){
+                flex-direction: column;
+            }
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid $gray-third-color;
+            input{
+                -webkit-appearance: none;
+                appearance: none;
+                &:checked + .server{
+                    border: 2px solid $blue-color;
+                    .label{
+                        color: $blue-color;
+                        i{
+                            color: $blue-color;
+                        }
+                    }
+                }
+            }
+            .server{
+                margin-bottom: 15px;
+                border-radius: $rad10;
+                width: 100%;
+                @include contentCenterer();
+                label{
+                    display: block;
+                    margin: 15px;
+                    i{
+                        display: block;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
 }

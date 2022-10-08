@@ -548,6 +548,73 @@ input[type=number] {
 .wrapper .social-info .social-box:focus-within i {
   color: black;
 }
+.wrapper .widgets-control {
+  padding: 20px;
+  background-color: white;
+  border-radius: 6px;
+}
+.wrapper .widgets-control .control {
+  display: flex;
+  margin-bottom: 15px;
+}
+.wrapper .widgets-control .control input {
+  margin-right: 10px;
+}
+.wrapper .backup-manager {
+  padding: 20px;
+  background-color: white;
+  border-radius: 6px;
+}
+.wrapper .backup-manager .manage {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.wrapper .backup-manager .manage input {
+  margin-right: 10px;
+}
+.wrapper .backup-manager .servers {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #EEEEEE;
+}
+@media (max-width:767px) {
+  .wrapper .backup-manager .servers {
+    flex-direction: column;
+  }
+}
+.wrapper .backup-manager .servers input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+}
+.wrapper .backup-manager .servers input:checked + .server {
+  border: 2px solid #0075ff;
+}
+.wrapper .backup-manager .servers input:checked + .server .label {
+  color: #0075ff;
+}
+.wrapper .backup-manager .servers input:checked + .server .label i {
+  color: #0075ff;
+}
+.wrapper .backup-manager .servers .server {
+  margin-bottom: 15px;
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .backup-manager .servers .server label {
+  display: block;
+  margin: 15px;
+}
+.wrapper .backup-manager .servers .server label i {
+  display: block;
+  margin-bottom: 10px;
+}
 
 .toggle-checkbox {
   --webkit--appearance: none;
