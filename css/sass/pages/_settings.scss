@@ -156,6 +156,7 @@
         }
         .servers{
             @include flexAlignCenter();
+            gap: 5px;
             @media($maxMobile){
                 flex-direction: column;
             }
@@ -179,10 +180,11 @@
                 margin-bottom: 15px;
                 border-radius: $rad10;
                 width: 100%;
-                @include contentCenterer();
+                border: 2px solid $gray-third-color;
+                padding: 10px;
                 label{
                     display: block;
-                    margin: 15px;
+                    cursor: pointer;
                     i{
                         display: block;
                         margin-bottom: 10px;

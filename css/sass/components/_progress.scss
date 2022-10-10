@@ -1,0 +1,28 @@
+.progress{
+    position: relative;
+    background-color: rgba($color: $green-color, $alpha: 0.2);
+    & > span{
+        background-color: red;
+        display: block;
+        position: relative;
+        height: 4px;
+        span{
+            position: absolute;
+            right: -16px;
+            bottom: 16px;
+            padding: 2px 5px;
+            border-radius: $rad6;
+            color: white;
+            font-weight: 700;
+            font-size: 13px;
+            &::after{
+                content: "";
+                border-color: transparent;
+                border-width: 5px;
+                border-style: solid;
+                @include horizantalCenterer();
+                bottom: -10px;
+            }
+        }
+    }
+}

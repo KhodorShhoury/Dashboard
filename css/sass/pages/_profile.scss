@@ -1,0 +1,110 @@
+.wrapper{
+    .overview{
+        background-color: white;
+        border-radius: $rad10;
+        grid-column-start: 1;
+        grid-column-end: -1;
+        display: flex;
+        align-items: center;
+        @media($maxMobile){
+            flex-direction: column;
+            padding: 20px 0px;
+        }
+        .avatar-box{
+            width: 300px;
+            text-align: center;
+            @media ($minSmall) {
+            border-right: 1px solid #eee;
+            }
+            img{
+                @include circle(120px);
+            }
+            h3{
+                margin: 10px 0px;
+            }
+            .level{
+                color: $gray-color;
+            }
+            .level-progress{
+                height: 6px;
+                overflow: hidden;
+                background-color: $gray-alt-color;
+                border-radius: $rad6;
+                margin: 10px auto;
+                position: relative;
+                width: 70%;
+                span{
+                    position: absolute;
+                    background-color: $main-color;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    border-radius: $rad6;
+                }
+            }
+            .stars{
+                font-size: 13px;
+                margin-bottom: 10px;
+            }
+            .rating{
+                font-size: 14px;
+                color: $gray-color;
+            }
+        }
+        .info-box{
+            border-left: 1px solid $gray-third-color;
+            @media($maxMobile){
+                text-align: center;
+            }
+            .box{
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                padding: 20px;
+                &:not(:last-of-type){
+                    border-bottom: 1px solid $gray-third-color;
+                }
+                &:hover{
+                    background-color: #fafafa;
+                }
+                h4{
+                    width: 100%;
+                    color: $gray-color;
+                    font-weight: normal;
+                    font-size: 15px;
+                }
+                & > div{
+                    min-width: 250px;
+                    padding: 10px 0 0;
+                    & span:first-child{
+                        color: $gray-color;
+                    }
+                }
+                label{
+                    @media($maxMobile){
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+    .my-skills{
+        padding: 20px;
+        background-color: white;
+        border-radius: $rad10;
+        width: 350px;
+        ul{
+            li{
+                padding: 20px;
+                border-bottom: 1px solid $gray-third-color;
+                
+                span{
+                    padding: 5px;
+                    background-color: $gray-third-color;
+                    margin-left: 10px;
+                    border-radius: $rad6;
+                }
+            }
+        }
+    }
+}
