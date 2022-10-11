@@ -30,10 +30,6 @@ button {
   outline: none;
 }
 
-input[type=number] {
-  -moz-appearance: textfield;
-}
-
 ::-webkit-scrollbar {
   width: 15px;
 }
@@ -149,6 +145,10 @@ input[type=number] {
 
 .orange {
   color: #f59e0b;
+}
+
+.bg-red {
+  background-color: red;
 }
 
 .bg-blue {

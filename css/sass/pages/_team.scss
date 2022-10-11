@@ -1,0 +1,71 @@
+.wrapper{
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    .member{
+        background-color: white;
+        padding: 20px;
+        border-radius: $rad10;
+        position: relative;
+        .contact{
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            i{
+                @include circle(35px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $gray-third-color;
+                margin-right: 5px;
+                color: #666666;
+            }
+        }
+        .profile{
+            text-align: center;
+            img{
+                @include circle(100px)
+            }
+            h4{
+                margin: 10px 0px;
+            }
+            p{
+                color: $gray-color;
+            }
+        }
+        .icons{
+            padding: 15px 0px;
+            margin: 15px 0;
+            border-bottom: 1px solid $gray-third-color;
+            border-top: 1px solid $gray-third-color;
+            div{
+                margin-bottom: 10px;
+                font-size: 14px;
+            }
+        }
+        .info{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            span{
+                font-size: 13px;
+                color: $gray-color;
+            }
+            div{
+                
+                a{
+                    color: white;
+                    padding: 4px 10px;
+                    border-radius: $rad6;
+                    font-size: 13px;
+                }
+                .profile{
+                    background-color: $blue-color;
+                }
+                .remove{
+                    background-color: $red-color;
+                }
+            }
+        }
+    }
+}

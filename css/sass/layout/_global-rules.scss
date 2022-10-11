@@ -24,9 +24,7 @@ body{
     border: none;
     outline: none;
   }
-  input[type="number"] {
-    -moz-appearance: textfield;
-  }
+ 
   ::-webkit-scrollbar{
     width: 15px;
   }
@@ -124,6 +122,9 @@ body{
   }
   .orange{
     color: $orange-color;
+  }
+  .bg-red{
+    background-color: red;
   }
   .bg-blue{
     background-color: $blue-color;
