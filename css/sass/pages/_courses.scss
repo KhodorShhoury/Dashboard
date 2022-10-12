@@ -1,0 +1,52 @@
+.wrapper{
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    .course{
+        position: relative;
+        background-color: white;
+        border-radius: $rad10;
+        overflow: hidden;
+        .course-img{
+            max-width: 100%
+        }
+        .trainer-img{
+            @include circle(64px);
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            border: 2px solid white;
+        }
+        .content{
+            padding: 20px;
+            margin-bottom: 15px;
+            h4{
+                margin-bottom: 15px;
+            }
+            p{
+                color: $gray-color;
+                font-size: 14px;
+                font-weight: 600;
+            }
+        }
+        .info{
+            padding: 15px;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid $gray-third-color;
+            .title{
+                background-color: $main-color;
+                color: white;
+                padding: 4px 10px;
+                border-radius: $rad6;
+                position: absolute;
+                top: -13px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            span:not(.title){
+                color: $gray-color;
+                font-size: 13px;
+            }
+        }
+    }
+}

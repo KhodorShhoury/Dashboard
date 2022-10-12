@@ -1,0 +1,22 @@
+// import variables
+@import "sass/helpers/variables";
+// import mixins
+@import "sass/helpers/mixins";
+// /import global rules
+@import "sass/layout/global-rules.scss";
+// import grid system
+@import "sass/layout/grid";
+// import sidebar
+@import "sass/layout/sidebar";
+//import content
+@import "sass/layout/content";
+//import wrapper
+@import "sass/layout/wrapper";
+// import dashboard
+@import "sass/pages/courses";
+// import buttons
+@import "sass/components/buttons";
+// import progress
+@import "sass/components/progress";
+// import checkbox
+@import "sass/components/checkbox";

@@ -404,79 +404,56 @@ button {
 .wrapper {
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
-.wrapper .member {
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
+.wrapper .course {
   position: relative;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
 }
-.wrapper .member .contact {
-  display: flex;
-  align-items: center;
+.wrapper .course .course-img {
+  max-width: 100%;
+}
+.wrapper .course .trainer-img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
   position: absolute;
-  top: 10px;
-  left: 10px;
+  left: 20px;
+  top: 20px;
+  border: 2px solid white;
 }
-.wrapper .member .contact i {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #EEEEEE;
-  margin-right: 5px;
-  color: #666666;
-  cursor: pointer;
-  transition-duration: 0.3s;
+.wrapper .course .content {
+  padding: 20px;
+  margin-bottom: 15px;
 }
-.wrapper .member .contact i:hover {
-  background-color: #287BFF;
+.wrapper .course .content h4 {
+  margin-bottom: 15px;
 }
-.wrapper .member .profile {
-  text-align: center;
-}
-.wrapper .member .profile img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
-.wrapper .member .profile h4 {
-  margin: 10px 0px;
-}
-.wrapper .member .profile p {
+.wrapper .course .content p {
   color: #A89CA0;
-}
-.wrapper .member .icons {
-  padding: 15px 0px;
-  margin: 15px 0;
-  border-bottom: 1px solid #EEEEEE;
-  border-top: 1px solid #EEEEEE;
-}
-.wrapper .member .icons div {
-  margin-bottom: 10px;
   font-size: 14px;
+  font-weight: 600;
 }
-.wrapper .member .info {
+.wrapper .course .info {
+  padding: 15px;
+  position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  border-top: 1px solid #EEEEEE;
 }
-.wrapper .member .info span {
-  font-size: 13px;
-  color: #A89CA0;
-}
-.wrapper .member .info div a {
+.wrapper .course .info .title {
+  background-color: #287BFF;
   color: white;
   padding: 4px 10px;
   border-radius: 6px;
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.wrapper .course .info span:not(.title) {
+  color: #A89CA0;
   font-size: 13px;
-}
-.wrapper .member .info div .profile {
-  background-color: #0075ff;
-}
-.wrapper .member .info div .remove {
-  background-color: #f44336;
 }
 
 .simple-progress {
@@ -539,4 +516,4 @@ button {
   justify-content: center;
   color: #aaa;
   transition: 0.3s;
-}/*# sourceMappingURL=team.css.map */
+}/*# sourceMappingURL=courses.css.map */

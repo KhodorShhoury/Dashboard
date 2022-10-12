@@ -19,6 +19,11 @@
                 background-color: $gray-third-color;
                 margin-right: 5px;
                 color: #666666;
+                cursor: pointer;
+                transition-duration: $mainTransitionDuration;
+                &:hover{
+                    background-color: $main-color;
+                }
             }
         }
         .profile{
