@@ -402,7 +402,15 @@ button {
 }
 
 .wrapper {
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+@media (max-width: 767px) {
+  .wrapper {
+    grid-template-columns: minmax(200px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
 }
 .wrapper .course {
   position: relative;
@@ -431,7 +439,7 @@ button {
 }
 .wrapper .course .content p {
   color: #A89CA0;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
 }
 .wrapper .course .info {

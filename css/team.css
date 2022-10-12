@@ -402,7 +402,15 @@ button {
 }
 
 .wrapper {
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+@media (max-width: 767px) {
+  .wrapper {
+    grid-template-columns: minmax(200px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
 }
 .wrapper .member {
   background-color: white;
@@ -466,11 +474,15 @@ button {
   font-size: 13px;
   color: #A89CA0;
 }
+.wrapper .member .info div {
+  display: flex;
+}
 .wrapper .member .info div a {
   color: white;
   padding: 4px 10px;
   border-radius: 6px;
   font-size: 13px;
+  margin-right: 5px;
 }
 .wrapper .member .info div .profile {
   background-color: #0075ff;
