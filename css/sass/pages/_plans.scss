@@ -1,0 +1,87 @@
+.wrapper{
+    .plan{
+        background-color: white;
+        padding: 20px;
+        .top{
+            text-align: center;
+            padding: 20px;
+            color: white;
+            border: 3px solid white;
+            h2{
+                font-size: 24px;
+            }
+            .price{
+                font-size: 40px;
+                position: relative;
+                width: fit-content;
+                margin: 0px auto;
+
+                span{
+                    position: absolute;
+                    top: 0px;
+                    left: -20px;
+                    font-size: 25px;
+                }
+            }
+        }
+        ul{
+            margin: 20px 0px;
+            li{
+                padding: 15px 0px;
+                border-bottom: 1px solid $gray-third-color;
+                display: flex;
+                align-items: center;
+                .yes{
+                    color: $green-color;
+                }
+                i:not(.yes,.help){
+                    color: $red-color;
+                }
+                .help{
+                    color: $gray-color;
+                    flex: 1;
+                    text-align: end;
+                    cursor: pointer;
+                }
+            }
+        }
+        a{
+            color: white;
+            padding: 5px 10px;
+            border-radius: $rad6;
+        }
+        p{
+            text-align: center;
+            color: $gray-color;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        &.free{
+            .top{
+                background-color: $green-color;
+                outline: 3px solid $green-color;
+            }
+            a{
+                background-color: $green-color;
+            }
+        }
+        &.basic{
+            .top{
+                background-color: $blue-color;
+                outline: 3px solid $blue-color;
+            }
+            a{
+                background-color: $blue-color;
+            }
+        }
+        &.premium{
+            .top{
+                background-color: $orange-color;
+                outline: 3px solid $orange-color;
+            }
+            a{
+                background-color: $orange-color;
+            }
+        }
+    }
+}
